@@ -2,7 +2,7 @@ import mongoose, { Schema, model } from 'mongoose';
 import { ICustomer } from './customer.interface';
 
 
-const customerSchema = new Schema<ICustomer>(
+const schema = new Schema<ICustomer>(
   {
     userId: {
       type: Schema.Types.ObjectId,
@@ -108,4 +108,4 @@ const customerSchema = new Schema<ICustomer>(
   }
 );
 
-export const Customer = model<ICustomer>('Customer', customerSchema);
+export const customerSchema = model<ICustomer>('Customer', schema);
