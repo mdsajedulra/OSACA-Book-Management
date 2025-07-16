@@ -17,6 +17,7 @@ export interface IBook {
     coverUrl?: string;
     isLocked?: boolean;
     locationId?: string;
+    isDeleted?: boolean;
   
     createdAt: Date;
     updatedAt: Date;
